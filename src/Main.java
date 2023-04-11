@@ -5,20 +5,6 @@ public class Main {
 
         //1.FELADAT
         //Print duplicate characters from String
-/*        String str = "macska";
-
-        String a = "macska aki kakil";
-        char b;
-        char c;
-        for (int i = 0; i < a.length(); i++) {
-            for (int j = i + 1; j < a.length(); j++) {
-                b = a.charAt(i);
-                c = a.charAt(j);
-                if(b == c) {
-                    System.out.print(b);
-                }
-            }
-        }*/
 
 /*        nonRepeatedCharacter("akarmi");
 
