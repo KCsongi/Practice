@@ -204,6 +204,7 @@ public class Main {
 
     //18.feladat
     //Remove duplicates from the given array in Java
+
     public static void removeDuplicates(int[] myArray) {
         Set<Integer> mySet = new HashSet<>();
         for (int i = 0; i < myArray.length; i++) {
