@@ -136,7 +136,7 @@ public class Main {
         }
     }
 
-    //-----------------------------------
+    //---------------------------------
     public static void printPermutn(String str, String ans) {
         if(str.length() == 0) {
             System.out.println(ans + " ");
