@@ -20,27 +20,6 @@ public class Main {
             }
         }*/
 
-
-        //3. FELADAT
-        //Print the first non-repeated character from String
-/*        String myString = "akarmi";
-        Set<Character> mySet = new HashSet<>();
-        System.out.println(mySet);
-
-        char[] a = myString.toCharArray();
-        int count = 0;
-        for (int i = 0; i < a.length; i++) {
-            mySet.add(a[i]);
-            if(mySet.contains(a[i])) {
-                count++;
-            }
-            if(count < 2) {
-                System.out.println("Van"+a[i]);
-                break;
-            }
-            System.out.println("nincs");
-        }*/
-
 /*        nonRepeatedCharacter("akarmi");
 
         onlyDigits("Sz3vasztok");
@@ -54,9 +33,9 @@ public class Main {
         System.out.println(d.substring(1));
         reverseWords("Ez teljesen jó");
         System.out.println(palindrome("kosarasok"));*/
-        int[] b = {5,10,15,5,6,10,1,56,89,0,2345,89};
-        findDuplicatedNumber(b);
-        smallestAndLargestNum(b);
+/*        int[] h = {5,10,15,5,6,10,1,56,89,0,2345,89};
+        findDuplicatedNumber(h);
+        smallestAndLargestNum(h);*/
 
     }
     //2.feladat
@@ -71,6 +50,7 @@ public class Main {
         System.out.println(Arrays.equals(c1, c2));
     }
     //3.feladat
+    // Print the first non-repeated character from String
     public static void nonRepeatedCharacter(String myString) {
         for (char i : myString.toCharArray()) {
             if(myString.indexOf(i) == myString.lastIndexOf(i)) {
@@ -85,6 +65,7 @@ public class Main {
 
     }
     //5.feladat
+    //Check if a String contains only digits
     public static boolean onlyDigits(String myString) {
         for (char i : myString.toCharArray()) {
             if(Character.isDigit(i)){
