@@ -16,11 +16,12 @@ public class Main {
         System.out.println(d.substring(1));
         reverseWords("Ez teljesen jó");
         System.out.println(palindrome("kosarasok"));*/
-/*        int[] h = {5,10,15,5,6,10,1,56,89,0,2345,89};
-        findDuplicatedNumber(h);
+        int[] h = {5,10,15,5,6,10,1,56,89,0,2345,89};
+/*        findDuplicatedNumber(h);
         smallestAndLargestNum(h);*/
         duplicate("macska");
         duplicatedChar("macska aki okos");
+        removeDuplicates(h);
 
     }
     //1.feladat
@@ -194,5 +195,20 @@ public class Main {
         System.out.println("A tömbben a legnagyobb szám: " + max);
     }
 
-//gjhjfdh
+    //16. Feladat
+    // Find all pairs of integer arrays whose sum is equal to a given number
+
+
+    //17.Feladat
+    // Find duplicate numbers in an array if it contains multiple duplicates
+
+    //18.feladat
+    //Remove duplicates from the given array in Java
+    public static void removeDuplicates(int[] myArray) {
+        Set<Integer> mySet = new HashSet<>();
+        for (int i = 0; i < myArray.length; i++) {
+            mySet.add(myArray[i]);
+        }
+        System.out.println(mySet);
+    }
 }
