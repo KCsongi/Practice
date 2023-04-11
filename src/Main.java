@@ -195,5 +195,5 @@ public class Main {
         System.out.println("A tömbben a legnagyobb szám: " + max);
     }
 
-//gjhj
+//gjhjfdh
 }
