@@ -3,9 +3,6 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
-        //1.FELADAT
-        //Print duplicate characters from String
-
 /*        nonRepeatedCharacter("akarmi");
 
         onlyDigits("Sz3vasztok");
@@ -22,7 +19,23 @@ public class Main {
 /*        int[] h = {5,10,15,5,6,10,1,56,89,0,2345,89};
         findDuplicatedNumber(h);
         smallestAndLargestNum(h);*/
+        duplicate("macska");
+        duplicatedChar("macska aki okos");
 
+    }
+    //1.feladat
+    //Print duplicate characters from String
+    public static void duplicatedChar(String myString) {
+        Set<Character> mySet = new HashSet<>();
+        char[] myChar = myString.toCharArray();
+        for (int i = 0; i < myChar.length; i++) {
+            for (int j = i+1; j < myChar.length; j++) {
+                if(myChar[i] == myChar[j]) {
+                    mySet.add(myChar[i]);
+                }
+            }
+        }
+        System.out.println(mySet);
     }
     //2.feladat
     //Check if two Strings are anagrams of each other
